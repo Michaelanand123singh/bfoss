@@ -51,16 +51,7 @@ const Header = () => {
               </Link>
             ))}
           </nav>
-          
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link
-              to="/community"
-              className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-6 py-2 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg inline-block"
-            >
-              Join Us
-            </Link>
-          </div>
+
           
           {/* Mobile Menu Button */}
           <button
@@ -92,13 +83,6 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/community"
-                className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-2 font-semibold shadow-lg mt-4 self-start rounded-lg inline-block"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Join Us
-              </Link>
             </nav>
           </div>
         )}
